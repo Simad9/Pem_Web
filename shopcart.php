@@ -2,6 +2,11 @@
 session_start();
 $koneksi = new mysqli('localhost', 'root', '', 'nwind');
 
+if (isset($_POST["checkout"])) {
+  session_destroy();
+  header("refresh:0");
+}
+
 //cek beli
 if (isset($_POST["ProductID"])) {
   $ProductID = $_POST["ProductID"];
@@ -79,3 +84,9 @@ if (isset($_POST["ProductID"])) {
 <br>
 <a href="index.php">Kembali Ke Awal</a>
 <br><br>
+
+<!-- TAMBAHAN -->
+<h4>Checkout</h4>
+<form action="" method="post">
+  <button type="submit" name="checkout">checkout</button>
+</form>

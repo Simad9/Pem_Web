@@ -1,0 +1,10 @@
+> Opening
+- Perkenalan nama
+- Nunjukin setupnya
+- Database sudah ada
+
+> mulai ngoding
+- Pake index.php alasan (agar saat dibuka langung mengarah ke halaman utamanya)
+- ngoding, sambil dijelasin, kenapa begini begini, aku makenya array associative
+- Terus jika diklik maka mengarah, terus ganti halaman. Pas ganti halaman kan perlu namanya db lagi, jadi dibikin modular
+- 
